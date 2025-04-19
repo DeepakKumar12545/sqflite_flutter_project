@@ -3,9 +3,8 @@ import 'package:path/path.dart';
 import '../model/tranction.dart';
 
 class TransactionDatabase {
-  static final TransactionDatabase instance = TransactionDatabase._create();
+  static final TransactionDatabase instance = TransactionDatabase();
   static Database? _database;
-  TransactionDatabase._create();
 
   //Database agar bana hai to use karo, nahi to banao
   Future<Database> get database async {
